@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма регистрации - Flexis</title>
+    <link rel="icon" type="image/png" href="/img/icon.png">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="form-container">
+        <form id="registrationForm" class="registration-form">
+            <h2>Подписание договора</h2>
+            
+            <div class="form-group">
+                <label for="lastName">Фамилия*</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="firstName">Имя*</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="middleName">Отчество</label>
+                <input type="text" id="middleName" name="middleName">
+            </div>
+
+            <div class="form-group">
+                <label for="citizenship">Гражданство*</label>
+                <input type="text" id="citizenship" name="citizenship" required>
+            </div>
+
+            <div class="form-group checkbox">
+                <input type="checkbox" id="agreement" name="agreement" required>
+                <label for="agreement">
+                    Я согласен с условиями <a href="/contract.pdf" target="_blank">договора</a>*
+                </label>
+            </div>
+
+            <button type="submit">Подписать</button>
+        </form>
+
+        <div id="successMessage" class="success-message hidden">
+            <h3>Успешно!</h3>
+            <p>Ваша заявка принята в обработку.</p>
+        </div>
+    </div>
+
+    <script src="form.js"></script>
+</body>
+</html> 
